@@ -1,6 +1,8 @@
 package tutorial;
 
 import java.util.Scanner;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -80,7 +82,7 @@ public class Main {
 //        else{
 //            System.out.println(s);
 //        }
-        main3(args);
+        main5(args);
     }
     public static  void main1(String[] args){
         System.out.println("Input your age: ");
@@ -155,7 +157,39 @@ public class Main {
                 break;
             }
         }
+    }
 
+    public  static void main4(String[] args){
+        // while loop ; when we don't know how many times we are gonna loop through
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Type a number: ");
+        int x=sc.nextInt();
+
+
+        while(x!=10){
+            System.out.println("Type 10 : ");
+            System.out.println("Type a number :");
+            x=sc.nextInt();
+
+        }
+    }
+
+    public static void main5(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int x;
+        do {
+            System.out.println("Type a number: ");
+            x=sc.nextInt();
+        } while(x!=10);
+        System.out.println("You have type correctly");
+    }
+
+    public static void main6(String[] args){
+        // Using Set and list;
+
+        Set<Integer>t=new HashSet<Integer>();
+        System.out.println();
     }
 
 }
