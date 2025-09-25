@@ -1,5 +1,6 @@
 package tutorial;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.HashSet;
 import java.util.Set;
@@ -82,7 +83,7 @@ public class Main {
 //        else{
 //            System.out.println(s);
 //        }
-        main5(args);
+        main7(args);
     }
     public static  void main1(String[] args){
         System.out.println("Input your age: ");
@@ -189,7 +190,44 @@ public class Main {
         // Using Set and list;
 
         Set<Integer>t=new HashSet<Integer>();
+        t.add(5);
+        t.add(6);
+        t.add(7);
+        t.add(8);
+        t.remove(9);
+        //t.clear();
+
+        t.size();
+
+
+        System.out.println(t);
+
+
+
+        // check if an element exists or not
+        boolean x=t.contains(5);
+        System.out.println(x);
+        System.out.println(t.size());
+
+    public static void main7(String[] args){
+        ArrayList<Integer>t =new ArrayList<Integer>();
+        t.add(1);
+
+
         System.out.println();
     }
 
 }
+
+    class MultiDimArrayDemo {
+        public static void main(String[] args) {
+            String[][] names = {
+                    {"Mr. ", "Mrs. ", "Ms. "},
+                    {"Smith", "Jones"}
+            };
+            // Mr. Smith
+            IO.println(names[0][0] + names[1][0]);
+            // Ms. Jones
+            IO.println(names[0][2] + names[1][1]);
+        }
+    }
