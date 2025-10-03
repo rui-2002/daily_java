@@ -83,27 +83,27 @@ public class Main {
 //        else{
 //            System.out.println(s);
 //        }
-        main7(args);
+        main6(args);
     }
-    public static  void main1(String[] args){
+
+    public static void main1(String[] args) {
         System.out.println("Input your age: ");
-        Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
-        int age=Integer.parseInt(s);
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int age = Integer.parseInt(s);
 
-        if(age>=18) {
+        if (age >= 18) {
             System.out.println("What is your fav food");
-            String food=sc.nextLine();
+            String food = sc.nextLine();
 
-            if(food.equals("pizza")){
+            if (food.equals("pizza")) {
                 System.out.println("You typed Pizza");
             }
-            System.out.println("Yes, you are older than 18 and fav food is :" +food);
-        }
-        else if(age>=13){
+            System.out.println("Yes, you are older than 18 and fav food is :" + food);
+        } else if (age >= 13) {
             System.out.println("Yes, you are older than 13.");
 
-        }else{
+        } else {
             System.out.println("No");
         }
     }
@@ -112,19 +112,19 @@ public class Main {
 //        int[] newArr=new int[5]; // declaring an array
 
         System.out.println("Starting main3");
-        String[] newArr2= new String[5];
-        newArr2[0]="hello";
-        newArr2[1]="world";
-        newArr2[2]="pizza";
-        newArr2[3]="haha";
+        String[] newArr2 = new String[5];
+        newArr2[0] = "hello";
+        newArr2[1] = "world";
+        newArr2[2] = "pizza";
+        newArr2[3] = "haha";
 
-        String x=newArr2[4];
+        String x = newArr2[4];
         System.out.println(x);
 
         // Another way to store the values
-        int[] nums={2,3,54,6,6};
+        int[] nums = {2, 3, 54, 6, 6};
 
-        double[] nums2={2.0,3.0};
+        double[] nums2 = {2.0, 3.0};
 
 //        for(int i=0;i<=10;i++){
 //            System.out.println(i);
@@ -135,61 +135,61 @@ public class Main {
 //        }
 
 
-        int[] arr={1,5,6,3,2,6,8};
-        String[] names=new String[5];
+        int[] arr = {1, 5, 6, 3, 2, 6, 8};
+        String[] names = new String[5];
 
-        int count=0;
-        for(int element:arr){
-            System.out.println(element+" "+count);
+        int count = 0;
+        for (int element : arr) {
+            System.out.println(element + " " + count);
             count++; // count keeping track of indexes.
         }
-        Scanner sc=new Scanner(System.in);
-        for(int i=0;i<names.length;i++){
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < names.length; i++) {
             System.out.print("Input : ");
-           String input=sc.nextLine();
-           names[i]=input;
+            String input = sc.nextLine();
+            names[i] = input;
 
 
         }
 
-        for(String n:names){
+        for (String n : names) {
             System.out.println(n);
-            if(n.equals("tim")){
+            if (n.equals("tim")) {
                 break;
             }
         }
     }
 
-    public  static void main4(String[] args){
+    public static void main4(String[] args) {
         // while loop ; when we don't know how many times we are gonna loop through
 
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Type a number: ");
-        int x=sc.nextInt();
+        int x = sc.nextInt();
 
 
-        while(x!=10){
+        while (x != 10) {
             System.out.println("Type 10 : ");
             System.out.println("Type a number :");
-            x=sc.nextInt();
+            x = sc.nextInt();
 
         }
     }
 
-    public static void main5(String[] args){
-        Scanner sc=new Scanner(System.in);
+    public static void main5(String[] args) {
+        Scanner sc = new Scanner(System.in);
         int x;
         do {
             System.out.println("Type a number: ");
-            x=sc.nextInt();
-        } while(x!=10);
+            x = sc.nextInt();
+        } while (x != 10);
         System.out.println("You have type correctly");
     }
 
-    public static void main6(String[] args){
+    public static void main6(String[] args) {
         // Using Set and list;
 
-        Set<Integer>t=new HashSet<Integer>();
+        Set<Integer> t = new HashSet<Integer>();
         t.add(5);
         t.add(6);
         t.add(7);
@@ -203,31 +203,13 @@ public class Main {
         System.out.println(t);
 
 
-
         // check if an element exists or not
-        boolean x=t.contains(5);
+        boolean x = t.contains(5);
         System.out.println(x);
         System.out.println(t.size());
 
-    public static void main7(String[] args){
-        ArrayList<Integer>t =new ArrayList<Integer>();
-        t.add(1);
 
-
-        System.out.println();
     }
-
 }
 
-    class MultiDimArrayDemo {
-        public static void main(String[] args) {
-            String[][] names = {
-                    {"Mr. ", "Mrs. ", "Ms. "},
-                    {"Smith", "Jones"}
-            };
-            // Mr. Smith
-            IO.println(names[0][0] + names[1][0]);
-            // Ms. Jones
-            IO.println(names[0][2] + names[1][1]);
-        }
-    }
+
